@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { CognitoUser, CognitoUserPool, AuthenticationDetails } from 'amazon-cognito-identity-js';
 
-const REACT_USER_POOL_ID=process.env.USER_POOL_ID;
+const REACT_USER_POOL_ID=process.env.REACT_APP_USER_POOL_ID;
 
-const REACT_CLIENT_ID =process.env.CLIENT_ID;
+const REACT_CLIENT_ID =process.env.REACT_APP_CLIENT_ID;
 
 const ResetPassword = () => {
   const [username, setUsername] = useState('');
