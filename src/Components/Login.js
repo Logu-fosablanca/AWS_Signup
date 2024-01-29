@@ -4,9 +4,12 @@ import { CognitoUser, AuthenticationDetails, CognitoUserPool } from 'amazon-cogn
 import {BrowserRouter as Router, Route, Link ,useNavigate  } from 'react-router-dom';
 // import ResetPassword from './ResetPassword';
 
-const REACT_USER_POOL_ID=process.env.REACT_USER_POOL_ID;
 
-const REACT_CLIENT_ID =process.env.REACT_CLIENT_ID;
+const REACT_USER_POOL_ID=process.env.REACT_APP_USER_POOL_ID;
+
+const REACT_CLIENT_ID =process.env.REACT_APP_CLIENT_ID;
+
+console.log(REACT_CLIENT_ID)
 
 const Login = () => {
     const [username, setUsername] = useState('');
