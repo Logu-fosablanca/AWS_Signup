@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const REACT_USER_POOL_ID=process.env.REACT_APP_USER_POOL_ID;
 
-const REACT_CLIENT_ID =process.env.REACT_APP_CLIENT_ID;ID;
+const REACT_CLIENT_ID =process.env.REACT_APP_CLIENT_ID;
 
 const SignUpForm = () => {
   const [email, setEmail] = useState('');
